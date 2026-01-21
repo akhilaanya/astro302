@@ -72,6 +72,4 @@ def operations():
     else except ValueError as e:
         exit_with_msg("Error: {}. You need to enter an integer from 1 to 4.".format(e))
 
-        
-
 
