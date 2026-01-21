@@ -43,7 +43,7 @@ def inputs(a1, b1):
     return "Thanks. Now you will select what operations you want."
 
 def operations():     
-    pick = int(input("Please type in the number of what operation you pick"
+    pick = int(input("Please type in the number of what operation you pick")
     print("1. Addition")
     print("2. Subtraction")
     print("3. Multiplication")
