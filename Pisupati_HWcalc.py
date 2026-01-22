@@ -4,42 +4,36 @@ def exit_with_msg(msg):
     print("{}\n\n Usage: {} <arg1> <arg2>".format(msg, sys.argv[0]))
 
 class Calculator:
+    def calculation(add, sub, mul, div, clr, a1, b1):
+        def add(c1,c2):
+            c = c1 + c2
+            return c
 
-def calc(add, sub, mul, div, clr, a1, b1):
-    def add(a1,b1):
-        c = a1 + b1
-        return c
+        def sub(c1,c2):
+            c = c1 - c2
+            return c
 
-    def sub(a1,b1):
-        c = a1 - b1
-        return c
+        def mul(c1,c2):
+            c = c1 * c2
+            return c
 
-    def mul(a1,b1):
-        c = a1 * b1
-        return c
+        def div(c1,c2):
+            c = c1 / c2
+            return c
 
-    def div(a1,b1):
-        c = a1 / b1
-        return c
+        def clr():
+            c = 0
+            return c
 
-        except ZeroDivisionError as err:
-            exit_with_msg("Error: {}. You cannot divide <arg1> by <arg2> since <arg2> is zero. Please try again.".format(msg))
 
-    def clr():
-        c = 0
-        return c
-
-    except ValueError as e:
-        exit_with_msg("Error: {}. All arguments must be numbers. Please try again.".format(e))
-
-Calculator = calc()
+Calculator = calculation()
 
 def welcome(message):
     print("Welcome to Akhila's calculator!")
 
-def inputs(a1, b1):
-    a1 = float(input("Please enter the first number you want")
-    b1 = float(input("please enter the second number you want") 
+def inputs(c1, c2):
+    c1 = float(input("Please enter the first number you want")
+    c2 = float(input("please enter the second number you want") 
     return "Thanks. Now you will select what operations you want."
 
 def operations():     
@@ -66,10 +60,6 @@ def operations():
     elif pick == '5':
         clr()
 
-    elif pick == '6':
+    else pick == '6':
         exit
     
-    else except ValueError as e:
-        exit_with_msg("Error: {}. You need to enter an integer from 1 to 4.".format(e))
-
-
