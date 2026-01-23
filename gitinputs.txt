@@ -1,0 +1,13 @@
+mit License for new repository
+
+Cd astro-302-t and tab will autofill the rest
+
+Git push inside a branch
+
+git push --set-upstream origin newbranch 
+
+Create a new fork when you want to make edits and push back to the original owner
+
+Learn git ignore
+
+Commit changes and then 
