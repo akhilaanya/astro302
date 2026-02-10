@@ -13,3 +13,6 @@ def load_and_prepare_cmd(filename):
     fieldA = pd.read_csv("fieldA.csv").values
 
 (g, gr) = load_and_prepare_cmd('fieldA.csv')
+
+def interactive_hess(g,gr):
+    plt.hexbin(
